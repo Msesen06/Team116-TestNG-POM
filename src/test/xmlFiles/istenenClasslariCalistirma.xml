@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen Classlari Toplu Calistirma">
+
+    <test name="class calistirma">
+        <classes>
+            <class name="tests.day12_testNG.C03_DependsOnMethods"></class>
+            <class name="tests.day13_TestNgFramework.C02_facebookTesti"></class>
+            <class name="tests.day13_TestNgFramework.C04_NutellaAramaTesti"></class>
+        </classes>
+    </test>
+</suite>

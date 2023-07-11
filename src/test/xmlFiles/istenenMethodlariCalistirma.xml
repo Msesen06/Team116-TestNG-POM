@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Istenen test methodlari calistirma">
+    <!--eger birden fazla hiyerarisye ihtiyacınız varsa uygun adımdan 2.bir hiyararsiz acabiliriz -->
+    <test name="method calistirma">
+        <classes>
+            <class name="tests.day13_TestNgFramework.QDNegativeLoginTest">
+                <methods>
+                    <include name="gecersizPaswordTesti"></include> <!-- -->
+                </methods>
+            </class>
+            <class name="tests.day12_testNG.C02_Priority">
+                <methods>
+                    <include name="youTubeTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="bir de paket ekleyelim dedki">
+        <packages>
+            <package name="tests.day13_TestNgFramework"></package>
+        </packages>
+    </test>
+
+</suite>
