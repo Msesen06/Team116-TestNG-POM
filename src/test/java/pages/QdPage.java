@@ -14,7 +14,7 @@ public class QdPage {
     }
 
     @FindBy(xpath = "//*[text()='Log in']")
-    public WebElement loginButonElementi ;
+    public WebElement ilkloginElementi ;
 
     @FindBy(xpath = "//*[@id='login-email']")
     public WebElement emailKutusuElementi;

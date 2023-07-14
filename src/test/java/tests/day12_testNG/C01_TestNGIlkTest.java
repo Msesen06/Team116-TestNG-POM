@@ -2,7 +2,8 @@ package tests.day12_testNG;
 
 import org.testng.annotations.Test;
 import utilities.Driver;
-import utilities.ReasableMethods;
+
+import utilities.ReusableMethods;
 
 public class C01_TestNGIlkTest {
     @Test
@@ -15,7 +16,7 @@ public class C01_TestNGIlkTest {
          */
 
         Driver.getDriver().get("https://www.amazon.com");
-        ReasableMethods.bekle(3);
+        ReusableMethods.bekle(3);
         Driver.closeDriver();
 
     }
@@ -23,10 +24,10 @@ public class C01_TestNGIlkTest {
     public void test02(){
         //youtube anasayfaya gidin
       Driver.getDriver().get("https://youtube.com");
-        ReasableMethods.bekle(3);
+        ReusableMethods.bekle(3);
         //url i yazdırın
         System.out.println(Driver.getDriver().getCurrentUrl());
-        ReasableMethods.bekle(3);
+        ReusableMethods.bekle(3);
         //sayfayı kapatın
         Driver.closeDriver();
     }

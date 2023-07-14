@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReasableMethods;
+import utilities.ReusableMethods;
 
 public class C06_QDLoginTest {
     @Test(groups = {"smoke,mini regression1"})
@@ -18,8 +18,8 @@ public class C06_QDLoginTest {
         //2- login linkine basin
         QdPage qdPage=new QdPage();
         qdPage.cookie.click();
-        qdPage.loginButonElementi.click();
-        ReasableMethods.bekle(2);
+        qdPage.ilkloginElementi.click();
+        ReusableMethods.bekle(2);
 
         // 3- Kullanici email’i olarak valid email girin
 
@@ -29,7 +29,7 @@ public class C06_QDLoginTest {
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
 
         // 5- Login butonuna basarak login olun
-        ReasableMethods.bekle(2);
+        ReusableMethods.bekle(2);
         qdPage.loginElementi.click();
         // 6- Basarili olarak giris yapilabildigini test edin
         Assert.assertTrue(qdPage.basariliGirisElementi.isDisplayed());

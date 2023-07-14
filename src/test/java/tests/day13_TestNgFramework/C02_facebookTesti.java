@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FacebookPage;
 import utilities.Driver;
-import utilities.ReasableMethods;
+import utilities.ReusableMethods;
 
 public class C02_facebookTesti {
     @Test
@@ -23,7 +23,7 @@ public class C02_facebookTesti {
         facebookPage.loginButton.click();
         //4- Basarili giris yapilamadigini test edin
         Assert.assertTrue(facebookPage.basarisizGirizYaziElementi.isDisplayed());
-        ReasableMethods.bekle(15);
+        ReusableMethods.bekle(15);
         Driver.closeDriver();
     }
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReasableMethods;
+import utilities.ReusableMethods;
 
 import java.security.Key;
 
@@ -24,7 +24,7 @@ public class C04_NutellaAramaTesti {
         Assert.assertTrue(actualSonucYazisi.contains(expectedICerik));
 
         //Sayfayi kapatın
-        ReasableMethods.bekle(5);
+        ReusableMethods.bekle(5);
         Driver.closeDriver();
 
     }

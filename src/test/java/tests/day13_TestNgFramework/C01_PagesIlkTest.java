@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
 import utilities.Driver;
-import utilities.ReasableMethods;
+import utilities.ReusableMethods;
 
 public class C01_PagesIlkTest {
 
@@ -24,7 +24,7 @@ public class C01_PagesIlkTest {
         Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
 
         //Sayfayi kapatın
-        ReasableMethods.bekle(5);
+        ReusableMethods.bekle(5);
         Driver.closeDriver();
     }
 

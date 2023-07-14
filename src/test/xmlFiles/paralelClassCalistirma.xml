@@ -1,6 +1,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="istenen Classlari Toplu Calistirma" parallel="classes" thread-count="2">
+<suite name="istenen Classlari Toplu Calistirma" parallel="classes" thread-count="2" verbose="">
+        <!--
+            paralel calıstırmak icin xml dosyasında cok kucuk iki ekleme
+            yapmamız gerekir.
 
+            1- parallel="classes"/test/method
+            bolusumun hangi seviyede yapılacagını belirler
+            testlerin cakısmaması gorev bolusumunun mumkun oldugunca esit olması
+            bagımlı testlerin aynı browser calıstırılabilmesi
+            icin tum classları packageleri manuel olarak testlere ayırıp test bazında
+            bolusum yapmak en uygunu olacaktır
+
+            2- thread-count="2" browser sayısını belirler
+            browser configuration dosyasından tum testler icin ayndıır
+            farklı browserla calıstırmak icin cross browser test ozel bir
+            configuration vardır
+
+            verbose="3"
+        -->
     <test name="class calistirma">
         <classes>
             <class name="tests.day12_testNG.C02_Priority"></class>

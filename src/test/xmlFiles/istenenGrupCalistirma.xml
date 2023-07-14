@@ -11,7 +11,6 @@
             <run>
                 <include name="smoke"></include>
                 <exclude name="mini regression1"></exclude>
-
             </run>
         </groups>
       <packages>

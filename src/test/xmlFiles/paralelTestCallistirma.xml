@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test seviyesinde paralel calıstırma" parallel="tests" thread-count="2">
+    <test name="paralel calsıtırma browser1">
+        <packages>
+            <package name="tests.day12_testNG"></package>
+            <package name="tests.day14_TestNgFramework_xmlFiles"></package>
+            
+        </packages>
+    </test>
+    
+    <test name="paralel calsıtırma browser2">
+        <packages>
+            <package name="tests.day13_TestNgFramework"></package>
+        </packages>
+    </test>
+    
+    
+    
+</suite>
