@@ -43,7 +43,7 @@ public class C04_DataProviderNegativeLoginTesti extends TestBaseRapor {
         // giris yapilamadigini test edin
         Assert.assertTrue(qdPage.emailKutusuElementi.isDisplayed());
         extentTest.pass("yanlıs kullanıcı adı ve parola ile giris yapılamadıgını test eder");
-        /// sayfayi kapatin
+        // sayfayi kapatin
         Driver.closeDriver();
     }
 }
