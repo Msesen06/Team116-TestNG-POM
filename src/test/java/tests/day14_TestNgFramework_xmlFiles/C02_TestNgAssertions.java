@@ -25,7 +25,6 @@ public class C02_TestNgAssertions {
         AmazonPage amazonPage=new AmazonPage();
         amazonPage.aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
 
-
         //ARama sonuclarının Nutella icerdigini test edin
 
         String expectedIcerik="Nutella";
